@@ -1,3 +1,5 @@
+const { rules } = require('eslint-plugin-react')
+
 module.exports = {
   extends: [
     'eslint:recommended',
@@ -5,5 +7,8 @@ module.exports = {
     'plugin:react/jsx-runtime',
     '@electron-toolkit/eslint-config-ts/recommended',
     '@electron-toolkit/eslint-config-prettier'
-  ]
+  ],
+  rules: {
+    'explicit-function-return-type': 'OFF'
+  }
 }
